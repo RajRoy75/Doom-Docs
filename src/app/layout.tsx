@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto, Codystar, Inter } from 'next/font/google';
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { ConvexClientProvider } from "@/components/convex-client-provider";
 
 // const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '700'] })
 // const codystar = Codystar({ subsets: ['latin'], weight: ['300', '400'] })
@@ -24,7 +25,9 @@ export default function RootLayout({
         className={inter.className}
       >
         <NuqsAdapter>
-          {children}
+          <ConvexClientProvider>
+            {children}
+          </ConvexClientProvider>
         </NuqsAdapter>
       </body>
     </html>
