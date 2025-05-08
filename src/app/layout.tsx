@@ -3,6 +3,7 @@ import "./globals.css";
 import { Roboto, Codystar, Inter } from 'next/font/google';
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ConvexClientProvider } from "@/components/convex-client-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 // const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '700'] })
 // const codystar = Codystar({ subsets: ['latin'], weight: ['300', '400'] })
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <NuqsAdapter>
           <ConvexClientProvider>
+            <Toaster />
             {children}
           </ConvexClientProvider>
         </NuqsAdapter>
