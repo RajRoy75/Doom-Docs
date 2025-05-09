@@ -5,6 +5,10 @@ import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ConvexClientProvider } from "@/components/convex-client-provider";
 import { Toaster } from "@/components/ui/sonner";
 
+import "@liveblocks/react-ui/styles.css";
+import "@liveblocks/react-tiptap/styles.css";
+import "./globals.css";
+
 // const roboto = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '700'] })
 // const codystar = Codystar({ subsets: ['latin'], weight: ['300', '400'] })
 const inter = Inter({ subsets: ['latin'] })
