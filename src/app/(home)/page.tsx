@@ -1,12 +1,10 @@
 'use client'
 
-import Link from "next/link";
 import { Navbar } from "./navbar";
 import { TemplatesGallery } from "./templates-gallery";
 import { usePaginatedQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { DocumentsTable } from "./documents-table";
-import { useSearchParams } from "next/navigation";
 import { useSearchParam } from "@/hooks/use-search-param";
 const Home = () => {
   const [search] = useSearchParam();
